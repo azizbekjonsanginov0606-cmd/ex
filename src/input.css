@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  body {
+    @apply text-white bg-gray-900;
+  }
+}
+@layer components {
+  .btn {
+    @apply px-[40px] py-[12px] text-white text-[14px] bg-blue-500 rounded-[10px] hover:bg-blue-700;
+  }
+}
