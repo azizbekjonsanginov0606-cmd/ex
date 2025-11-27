@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
+
 <body>
-      <nav class="lg:w-[1300px] m-auto flex items-center justify-between p-6 ">
-        <img src="./surat/Logo.png" alt="s"> 
-        <ul class="flex gap-[50px]">
-            <li><a class="text-white hover:underline">Home</a></li>
-            <li><a href="index3.html" class="text-white hover:underline">Services</a></li>
-            <li><a href="index5.html" class="text-white hover:underline">Portfolio</a></li>
-            <li><a href="index2.html" class="text-white hover:underline">About Us</a></li>
-            <li><a href="index4.html" class="text-white hover:underline">Careers</a></li>
+    <nav class="lg:w-[1300px] m-auto flex gap-[50px] flex-col sm:flex-row items-center justify-between sm:p-0 p-6 ">
+        <aside class="flex justify-between items-center sm:w-auto">
+        <img src="./surat/Logo.png" alt="s">
+        <button class="btn sm:hidden flex">Contact Us</button>
+        </aside>
+        <ul class="flex gap-[50px] text-[14px] font-[500] justify-betwee  items-center  flex-col sm:flex-row md:flex">
+            <aside class="flex gap-[50px]">
+                <li><a class="text-white hover:underline">Home</a></li>
+                <li><a href="index3.html" class="text-white hover:underline">Services</a></li>
+                <li><a href="index5.html" class="text-white hover:underline">Portfolio</a></li>
+            </aside>
+            <aside class="flex gap-[50px]">
+                <li><a href="index2.html" class="text-white hover:underline">About Us</a></li>
+                <li><a href="index4.html" class="text-white hover:underline">Careers</a></li>
+            </aside>
         </ul>
-        <button class="btn">Contact Us</button>
+        <button class="btn hidden sm:flex">Contact Us</button>
     </nav>
+    <section
+        class=" lg:w-[1300px] md:w-[800px] w-[400px] m-auto flex flex-col sm:flex-row text-white justify-between  items-center  lg:px-0 p-[20px]">
+        <aside
+            class="w-[400px] lg:w-[600px] flex  flex-col gap-[25px] sm:text-start sm:p-0 text-start px-[20px]  items-start sm:items-start">
+            <p class="text-[50px] lg:text-[60px] font-[800]">Transforming Data into <span
+                    class="bg-blue-700 rounded-[10px] px-[20px]">Decisions</span> </p>
+            <p class="text-[15px] sm:text-[20px] lg:w-[510px] w-auto">Leverage the power of machine learning and AI to unlock
+                insights and drive business growth</p>
+            <button class="btn px-[30px]">Book a Meeting</button>
+            <aside class="flex gap-[20px] items-center">
+                <img src="./surat/Group 20.png" alt="w">
+                <p class="text-[14px]">Over 100+ clients have worked with us</p>
+            </aside>
+        </aside>
+        <img src="./surat/robot area.png" alt="fd" class="lg:w-[800px] hidden sm:flex sm:mt-0 sm:ml-[-100px]">
+    </section>
 </body>
+
 </html>
